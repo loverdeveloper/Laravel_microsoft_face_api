@@ -31,7 +31,7 @@ by Mohammad Najafian
   ```
  ##### 4 .  Set Headers :100: : 
   We Must to set headers to use Microsoft's Face APi (only lowercase) : 
-  ###### if you want to put APi_key in Headers or Parameters Use This :
+  ##### if you want to put APi_key in Headers or Parameters Use This :
   ```
     $face->getApiKey();
   ```
@@ -50,11 +50,11 @@ To this step we can set the Parameters :
       'returnFaceAttributes' => 'age,gender,glasses,smile,noise,hair,accessories,emotion,makeup', // Your Requsted info
   ));
 ```
-######You can set these in the returnFaceAttributes in  parameters
+#####You can set these in the returnFaceAttributes in  parameters
 Some Face Attributes : age , gender , glasses , smile , noise , hair , accessories , emotion , makeup ... 
 //
 ##### 6 .  Set image :100: : 
-######Then , we need to set image :-) : 
+#####Then , we need to set image :-) : 
 We must to put image URL in the array Like This.
 ```
   $image = array(
