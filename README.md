@@ -77,7 +77,7 @@ Do This :
          // Now JSON in $result  
          return $result;      
 ```
-#  Finish And a Example: 
+##  Finish And a Example: 
 
 
  ```
@@ -102,8 +102,8 @@ Do This :
         $result = $face->send();
 
  ```
-#Licence
+##Licence
     This Project is under the MIT Licence
-#Read About Microsoft Face Api
+##Read About Microsoft Face Api
 ###Types of requests
 https://westcentralus.dev.cognitive.microsoft.com/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236
