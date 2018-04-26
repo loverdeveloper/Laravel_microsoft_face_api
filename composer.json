@@ -1,0 +1,17 @@
+{
+    "name": "ikosar/lmfa",
+    "description": "This Package Help You to connect to Microsoft Face APi.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ikosar",
+            "email": "33053881+ikosar@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php":">=5.9.0",
+        "pear/http_request2":"2.3.0"
+    }
+}
