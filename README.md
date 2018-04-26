@@ -3,12 +3,12 @@ This Package Help You To Connect To Microsoft Face APi
 by Mohammad Najafian
 # Installation
 #### install With Composer
-```
+```php
  composer require ikosar/lmfa 
  ```
 #### After : 
 
-```
+```php
  php artisan vendor:publish 
  ```
  # Config
@@ -16,26 +16,26 @@ by Mohammad Najafian
  # Usage 
  ## Normal Request  (Return To You Face's info)
  ### 1 .  First we need to do this  :100: :  
- ``` 
+ ```php
   $face = new CheckFace();
  ```
  ### 2 .  We Set The Url : 
   if you want to customize the url , Do this :100: : (default : https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect)
-  ```
+  ```php
     $face->setUrl($url);
   ```
  ### 3 .  Also Set Request Type ( post , get , delete , put ) :100: : 
   To this step we set the request's type (only lowercase) : 
-  ```
+  ```php
     $face->setMethod("post");
   ```
  ### 4 .  Set Headers :100: : 
   We Must to set headers to use Microsoft's Face APi (only lowercase) : 
   ##### if you want to put APi_key in Headers or Parameters Use This :
-  ```
+  ```php
     $face->getApiKey();
   ```
-  ```
+  ```php
     $face->setHeaders(array(
        'Content-Type' => 'application/json',
        'Ocp-Apim-Subscription-Key' => $face->getApiKey(),
@@ -43,7 +43,7 @@ by Mohammad Najafian
   ```
    ### 5 .  Set Parameters :100: : 
 To this step we can set the Parameters :
-```
+```php
   $face->setParameters(array(
       'returnFaceId' => 'true', // Recommended : True 
       'returnFaceLandmarks' => 'false', // Very information about face sizes
@@ -56,22 +56,22 @@ Some Face Attributes : age , gender , glasses , smile , noise , hair , accessori
 ### 6 .  Set image :100: : 
 Then , we need to set image :-) : 
 We must to put image URL in the array Like This.
-```
+```php
   $image = array(
       'url' => 'http://cdn-tehran.wisgoon.com/dlir-s3/10531466806488528869.JPG',
   );
   $face->setBody($image,true); // Set Image
         
 ```
-### 7 .  Check Request to complete set :100: : 
+### 7 .  Check Request to complete seted :100: : 
 We must to Check Before ```$face->send()```.
-```
+```php
          $face->check();
          $face->send();        
 ```
 ### 8 .  Get Face Information in JSON :100: : 
 Do This :
-```
+```php
          $face->check();
          $result = $face->send();
          // Now JSON in $result  
@@ -80,7 +80,7 @@ Do This :
 ##  Finish And a Example: 
 
 
- ```
+ ```php
         $image = array(
             'url' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Donald_Trump_August_19%2C_2015_%28cropped%29.jpg/245px-Donald_Trump_August_19%2C_2015_%28cropped%29.jpg',
         );
