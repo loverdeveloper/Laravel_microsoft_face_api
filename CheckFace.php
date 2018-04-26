@@ -48,7 +48,7 @@ class CheckFace
         $this->method = $method;
     }
 
-    public function setBody($body = true, $is_simple_request = true)
+    public function setBody(array $body, $is_simple_request = true)
     {
         $this->body = $body;
         $this->request_type = $is_simple_request;
