@@ -4,3 +4,6 @@ by Mohammad Najafian
 # Installation
 ### install With Composer
 ``` composer require ikosar/lmfa ```
+After : 
+
+``` php artisan vendor:publish ```
