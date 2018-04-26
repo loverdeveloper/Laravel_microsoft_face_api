@@ -20,7 +20,7 @@ by Mohammad Najafian
   $face = new CheckFace();
  ```
  ### 2 .  We Set The Url : 
-  if you want to customize the url Do this :100: : (default : https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect)
+  if you want to customize the url , Do this :100: : (default : https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect)
   ```
     $face->setUrl($url);
   ```
@@ -100,8 +100,8 @@ Do This :
         $face->setBody($image);
         $face->check();
         $result = $face->send();
-
  ```
+ 
 ##Licence
     This Project is under the MIT Licence
 ##Read About Microsoft Face Api
