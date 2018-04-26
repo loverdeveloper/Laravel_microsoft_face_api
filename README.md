@@ -14,22 +14,22 @@ by Mohammad Najafian
  # Config
  Open ``` lmfa.php ``` in config folder in laravel root then you can enter you'r ``` api_key ``` in this file !
  # Usage 
- #### Normal Request  (Return To You Face's info)
- ##### 1 .  First we need to do this  :100: :  
+ ## Normal Request  (Return To You Face's info)
+ ### 1 .  First we need to do this  :100: :  
  ``` 
   $face = new CheckFace();
  ```
- ##### 2 .  We Set The Url : 
+ ### 2 .  We Set The Url : 
   if you want to customize the url Do this :100: : (default : https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect)
   ```
     $face->setUrl($url);
   ```
- ##### 3 .  Also Set Request Type ( post , get , delete , put ) :100: : 
+ ### 3 .  Also Set Request Type ( post , get , delete , put ) :100: : 
   To this step we set the request's type (only lowercase) : 
   ```
     $face->setMethod("post");
   ```
- ##### 4 .  Set Headers :100: : 
+ ### 4 .  Set Headers :100: : 
   We Must to set headers to use Microsoft's Face APi (only lowercase) : 
   ##### if you want to put APi_key in Headers or Parameters Use This :
   ```
@@ -41,7 +41,7 @@ by Mohammad Najafian
        'Ocp-Apim-Subscription-Key' => $face->getApiKey(),
     ));
   ```
-   ##### 5 .  Set Parameters :100: : 
+   ### 5 .  Set Parameters :100: : 
 To this step we can set the Parameters :
 ```
   $face->setParameters(array(
@@ -53,7 +53,7 @@ To this step we can set the Parameters :
 #####You can set these in the returnFaceAttributes in  parameters
 Some Face Attributes : age , gender , glasses , smile , noise , hair , accessories , emotion , makeup ... 
 //
-##### 6 .  Set image :100: : 
+### 6 .  Set image :100: : 
 #####Then , we need to set image :-) : 
 We must to put image URL in the array Like This.
 ```
@@ -63,13 +63,13 @@ We must to put image URL in the array Like This.
   $face->setBody($image,true); // Set Image
         
 ```
-##### 7 .  Check Request to complete set :100: : 
+### 7 .  Check Request to complete set :100: : 
 We must to Check Before ```$face->send()```.
 ```
          $face->check();
          $face->send();        
 ```
-##### 8 .  Get Face Information in JSON :100: : 
+### 8 .  Get Face Information in JSON :100: : 
 Do This :
 ```
          $face->check();
