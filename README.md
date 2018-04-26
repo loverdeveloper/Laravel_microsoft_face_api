@@ -50,11 +50,11 @@ To this step we can set the Parameters :
       'returnFaceAttributes' => 'age,gender,glasses,smile,noise,hair,accessories,emotion,makeup', // Your Requsted info
   ));
 ```
-####You can set these in the returnFaceAttributes in  parameters
+You can set these in the returnFaceAttributes in  parameters
 Some Face Attributes : age , gender , glasses , smile , noise , hair , accessories , emotion , makeup ... 
 //
 ### 6 .  Set image :100: : 
-####Then , we need to set image :-) : 
+Then , we need to set image :-) : 
 We must to put image URL in the array Like This.
 ```
   $image = array(
@@ -103,7 +103,7 @@ Do This :
 
  ```
 #Licence
-This Project is under the MIT Licence
+    This Project is under the MIT Licence
 #Read About Microsoft Face Api
 ###Types of requests
 https://westcentralus.dev.cognitive.microsoft.com/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236
