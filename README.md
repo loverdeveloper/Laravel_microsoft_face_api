@@ -106,4 +106,6 @@ Do This :
     This Project is under the MIT Licence
 ##Read About Microsoft Face Api
 ###Types of requests
+```
 https://westcentralus.dev.cognitive.microsoft.com/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236
+```
