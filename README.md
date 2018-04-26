@@ -50,11 +50,11 @@ To this step we can set the Parameters :
       'returnFaceAttributes' => 'age,gender,glasses,smile,noise,hair,accessories,emotion,makeup', // Your Requsted info
   ));
 ```
-#####You can set these in the returnFaceAttributes in  parameters
+####You can set these in the returnFaceAttributes in  parameters
 Some Face Attributes : age , gender , glasses , smile , noise , hair , accessories , emotion , makeup ... 
 //
 ### 6 .  Set image :100: : 
-#####Then , we need to set image :-) : 
+####Then , we need to set image :-) : 
 We must to put image URL in the array Like This.
 ```
   $image = array(
