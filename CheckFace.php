@@ -24,9 +24,13 @@ class CheckFace
         return $this->api_key;
     }
 
-    public function setUrl(array $url)
+    public function setUrl($url = "https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect")
     {
         $this->url = $url;
+    }
+    public function setImage(array $image)
+    {
+        $this->image = $image;
     }
 
     public function setHeaders(array $headers)
@@ -64,13 +68,12 @@ class CheckFace
     public function send()
     {
         if ($this->check) {
-            if ($this->request_type == true)
-            {
-                $request = new Http_Request2('https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect');
-            }
-            else
+            if ($this->url)
             {
                 $request = new Http_Request2($this->url);
+            }
+            else {
+                $request = new Http_Request2('https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect');
             }
             $url = $request->getUrl();
             $headers = $this->headers;
@@ -96,7 +99,7 @@ class CheckFace
             };
             $request->setMethod($mtd);
             if ($this->request_type == true) {
-                $simple = json_encode($this->url);
+                $simple = json_encode($this->image);
                 $request->setBody($simple);
             } else {
                 $request->setBody($this->body);

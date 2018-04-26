@@ -9,6 +9,10 @@
             "email": "33053881+ikosar@users.noreply.github.com"
         }
     ],
+    "repositories": [
+        {"type": "composer", "url": "https://repo.packagist.com/lmfa/"},
+        {"packagist.org": false}
+    ],
     "minimum-stability": "dev",
     "require": {
         "php":">=5.9.0",
