@@ -13,7 +13,7 @@
         {"type": "composer", "url": "https://repo.packagist.com/lmfa/"},
         {"packagist.org": false}
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "php":">=5.9.0",
         "pear/http_request2":"2.3.0"
