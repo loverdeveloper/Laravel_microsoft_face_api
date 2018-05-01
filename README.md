@@ -84,9 +84,10 @@ Do This :
         $image = array(
             'url' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Donald_Trump_August_19%2C_2015_%28cropped%29.jpg/245px-Donald_Trump_August_19%2C_2015_%28cropped%29.jpg',
         );
-
+        $url = "http://..."; 
         $face = new CheckFace();
-        $face->setUrl($image);
+        $face->setUrl($url);
+        $face->setImage($image);
         $face->setMethod("post");
         $face->setHeaders(array(
             'Content-Type' => 'application/json',
